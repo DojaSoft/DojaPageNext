@@ -2,9 +2,9 @@
 import React from "react";
 import type { FC } from "react";
 // Libs
-import WhatsAppIcon from "@material-ui/icons/WhatsApp";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import InstagramIcon from "@material-ui/icons/Instagram";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 // Style
 import FooterWrapper from "./style";
 

@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import type { FC } from "react";
 // Libs
-import MenuIcon from "@material-ui/icons/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
-import { useMediaQuery } from "@material-ui/core";
+import MenuIcon from "@mui/icons-material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import { useMediaQuery } from "@mui/material";
 // Images
 import LogoDoja from "@/images/logo/Logo-DOJA.webp";
 import Image from "next/image";

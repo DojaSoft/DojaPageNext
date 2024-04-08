@@ -79,16 +79,18 @@ export default function Inicio(props) {
           <div className={classNames(classes.main, classes.mainRaised)}>
 
               <div id="quienes-somos">
-                  <div className="logo-center">
-                      <img
-                          src="/img/Logo-DOJA.png"
-                          alt="logo dojasoft"
-                      />
-                  </div>
-                  <Info><h1 color={classes.secundary}
-                            className={classes.title}>¿Quienes somos?</h1>
-                  </Info>
                   <GridContainer>
+                      <GridItem xs={12} sm={12} md={12}>
+                          <div className="logo-center">
+                              <img
+                                  src="/img/Logo-DOJA.png"
+                                  alt="logo dojasoft"
+                              />
+                          </div>
+                      </GridItem>
+                      <GridItem xs={12} sm={12} md={12}>
+                          <h3 className={classes.title}>¿Quienes somos?</h3>
+                      </GridItem>
                       <GridItem xs={12} sm={12} md={12}>
                           <InfoArea
                               title="Dojasoft"
@@ -103,7 +105,7 @@ export default function Inicio(props) {
                           />
                       </GridItem>
                       <GridItem xs={12} sm={12} md={6}>
-                          <p>
+
                               <InfoArea
                                   title="Visión"
                                   description="Para el año 2030 ser el mejor aliado estratégico en soluciones tecnológicas, mediante innovación,
@@ -113,7 +115,7 @@ export default function Inicio(props) {
                                   iconColor="info"
                                   vertical
                               />
-                          </p>
+
                       </GridItem>
                       <GridItem xs={12} sm={12} md={6}>
                           <InfoArea
@@ -130,11 +132,9 @@ export default function Inicio(props) {
               <div id="a-la-medida">
                   <GridContainer>
                       <GridItem xs={12} sm={12} md={12}>
-                          <Info><h1 color={classes.secundary}
-                                    className={classes.title}>¿Como desarrollamos Software?</h1>
-                          </Info>
+                          <h3 className={classes.title}>¿Como desarrollamos Software?</h3>
                       </GridItem>
-                      <GridItem xs={12} sm={12} md={6}>
+                      <GridItem xs={12} sm={12} md={12}>
                           <div>
                               <CustomTabs
                                   headerColor="primary"

@@ -133,84 +133,68 @@ export default function Inicio(props) {
                           <Info><h1 color={classes.secundary}
                                     className={classes.title}>¿Como desarrollamos Software?</h1>
                           </Info>
-
-                          <CustomTabs
-                              headerColor="primary"
-                              tabs={[
-                                  {
-                                      tabName: "Profile",
-                                      tabIcon: Face,
-                                      tabContent: (
-                                          <p className={classes.textCenter}>
-                                              I think that’s a responsibility that I have, to push
-                                              possibilities, to show people, this is the level that
-                                              things could be at. So when you get something that has
-                                              the name Kanye West on it, it’s supposed to be pushing
-                                              the furthest possibilities. I will be the leader of a
-                                              company that ends up being worth billions of dollars,
-                                              because I got the answers. I understand culture. I am
-                                              the nucleus.
-                                          </p>
-                                      )
-                                  },
-                                  {
-                                      tabName: "Messages",
-                                      tabIcon: Chat,
-                                      tabContent: (
-                                          <p className={classes.textCenter}>
-                                              I think that’s a responsibility that I have, to push
-                                              possibilities, to show people, this is the level that
-                                              things could be at. I will be the leader of a company
-                                              that ends up being worth billions of dollars, because I
-                                              got the answers. I understand culture. I am the nucleus.
-                                              I think that’s a responsibility that I have, to push
-                                              possibilities, to show people, this is the level that
-                                              things could be at.
-                                          </p>
-                                      )
-                                  },
-                                  {
-                                      tabName: "Settings",
-                                      tabIcon: Build,
-                                      tabContent: (
-                                          <p className={classes.textCenter}>
-                                              think that’s a responsibility that I have, to push
-                                              possibilities, to show people, this is the level that
-                                              things could be at. So when you get something that has
-                                              the name Kanye West on it, it’s supposed to be pushing
-                                              the furthest possibilities. I will be the leader of a
-                                              company that ends up being worth billions of dollars,
-                                              because I got the answers. I understand culture. I am
-                                              the nucleus.
-                                          </p>
-                                      )
-                                  }
-                              ]}
-                          />
+                      </GridItem>
+                      <GridItem xs={12} sm={12} md={6}>
+                          <div>
+                              <CustomTabs
+                                  headerColor="primary"
+                                  tabs={[
+                                      {
+                                          tabName: "Profile",
+                                          tabIcon: Face,
+                                          tabContent: (
+                                              <p className={classes.textCenter}>
+                                                  I think that’s a responsibility that I have, to push
+                                                  possibilities, to show people, this is the level that
+                                                  things could be at. So when you get something that has
+                                                  the name Kanye West on it, it’s supposed to be pushing
+                                                  the furthest possibilities. I will be the leader of a
+                                                  company that ends up being worth billions of dollars,
+                                                  because I got the answers. I understand culture. I am
+                                                  the nucleus.
+                                              </p>
+                                          )
+                                      },
+                                      {
+                                          tabName: "Messages",
+                                          tabIcon: Chat,
+                                          tabContent: (
+                                              <p className={classes.textCenter}>
+                                                  I think that’s a responsibility that I have, to push
+                                                  possibilities, to show people, this is the level that
+                                                  things could be at. I will be the leader of a company
+                                                  that ends up being worth billions of dollars, because I
+                                                  got the answers. I understand culture. I am the nucleus.
+                                                  I think that’s a responsibility that I have, to push
+                                                  possibilities, to show people, this is the level that
+                                                  things could be at.
+                                              </p>
+                                          )
+                                      },
+                                      {
+                                          tabName: "Settings",
+                                          tabIcon: Build,
+                                          tabContent: (
+                                              <p className={classes.textCenter}>
+                                                  think that’s a responsibility that I have, to push
+                                                  possibilities, to show people, this is the level that
+                                                  things could be at. So when you get something that has
+                                                  the name Kanye West on it, it’s supposed to be pushing
+                                                  the furthest possibilities. I will be the leader of a
+                                                  company that ends up being worth billions of dollars,
+                                                  because I got the answers. I understand culture. I am
+                                                  the nucleus.
+                                              </p>
+                                          )
+                                      }
+                                  ]}
+                              />
+                          </div>
                       </GridItem>
                   </GridContainer>
               </div>
               <div id="contactenos">
-                  <SectionBasics/>
-                  <SectionCarousel/>
-                  <SectionTabs/>
-                  <SectionPills/>
-                  <SectionNotifications/>
-                  <SectionTypography/>
-                  <SectionJavascript/>
-                  <SectionCompletedExamples/>
-                  <SectionLogin/>
-                  <GridItem md={12} className={classes.textCenter}>
-                      <Link href="/login">
-                          <a className={classes.link}>
-                              <Button color="primary" size="lg" simple>
-                                  View Login Page
-                              </Button>
-                          </a>
-                      </Link>
-                  </GridItem>
-                  <SectionExamples/>
-                  <SectionDownload/>
+
               </div>
 
           </div>

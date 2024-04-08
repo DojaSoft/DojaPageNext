@@ -1,31 +1,56 @@
 {
-  "name": "doja_next",
-  "version": "0.1.0",
-  "private": true,
+  "name": "next-material-kit",
+  "version": "1.2.2",
+  "description": "NextJS Version of Material Kit React by Creative Tim (https://creative-tim.com)",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && npm install && npm run dev"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativetimofficial/nextjs-material-kit.git"
+  },
+  "keywords": [
+    "next",
+    "nextjs",
+    "react",
+    "reactjs",
+    "npx",
+    "material",
+    "material-design",
+    "material-kit",
+    "material-kit-react",
+    "next-material-kit"
+  ],
+  "author": "Creative Tim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/nextjs-material-kit/issues"
+  },
+  "homepage": "https://demos.creative-tim.com/nextjs-material-kit",
   "dependencies": {
-    "@emotion/react": "11.11.3",
-    "@emotion/styled": "11.11.0",
-    "@mui/icons-material": "5.15.10",
-    "@mui/material": "5.15.10",
-    "install": "0.13.0",
-    "next": "14.1.0",
-    "npm": "^10.4.0",
-    "react": "18",
-    "react-dom": "18",
-    "styled-components": "6.1.8"
+    "@material-ui/core": "4.12.4",
+    "@material-ui/icons": "4.11.3",
+    "@material-ui/styles": "4.11.5",
+    "classnames": "2.3.2",
+    "moment": "2.29.4",
+    "next": "12.2.5",
+    "nouislider": "14.7.0",
+    "prop-types": "15.8.1",
+    "react": "18.2.0",
+    "react-datetime": "3.1.1",
+    "react-dom": "18.2.0",
+    "react-slick": "0.29.0",
+    "styled-components": "5.3.5",
+    "sass": "1.66.1",
+    "webpack": "5.88.2"
   },
-  "devDependencies": {
-    "@types/node": "20",
-    "@types/react": "18",
-    "@types/react-dom": "18",
-    "eslint": "8",
-    "eslint-config-next": "14.1.0",
-    "typescript": "5"
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
   }
 }

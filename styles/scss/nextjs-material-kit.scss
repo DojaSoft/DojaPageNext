@@ -35,3 +35,35 @@
   margin-left: -40px;
   margin-top: -80px;
 }
+
+/* Styles QuienesSomos */
+#quienes-somos{
+
+  text-align: center;
+
+  h1{
+    width: 50%;
+    display: inline-block;
+  }
+  p{
+    color: #000000;
+  }
+  .logo-center{
+    display: inline-block;
+  }
+  .logo-center img {
+    width: 50%;
+  }
+}
+/*************************/
+
+/* Styles a-la-medida */
+#a-la-medida{
+  text-align: center;
+  h1{
+    padding: 5rem 0;
+  }
+}
+/**********************/
+
+

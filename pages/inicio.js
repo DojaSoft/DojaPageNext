@@ -40,12 +40,24 @@ import Face from "@material-ui/icons/Face";
 import Build from "@material-ui/icons/Build";
 import {AcUnitRounded, AddToHomeScreenRounded, Memory, SupervisedUserCircle} from "@material-ui/icons";
 import Camera from "@material-ui/icons/Camera";
+import LibraryBooks from "@material-ui/icons/LibraryBooks";
+import Dialog from "@material-ui/core/Dialog";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import IconButton from "@material-ui/core/IconButton";
+import Close from "@material-ui/icons/Close";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogActions from "@material-ui/core/DialogActions";
+import Slide from "@material-ui/core/Slide";
 
 const useStyles = makeStyles(styles);
 
 export default function Inicio(props) {
   const classes = useStyles();
   const { ...rest } = props;
+  const [classicModal, setClassicModal] = React.useState(false);
+  const Transition = React.forwardRef(function Transition(props, ref) {
+    return <Slide direction="down" ref={ref} {...props} />;
+  });
   return (
       <div>
           <div id="inicio">
@@ -217,9 +229,66 @@ export default function Inicio(props) {
                       </GridItem>
                   </GridContainer>
               </div>
+              <div id="trabajos">
+                  <GridContainer>
+                      <GridItem xs={12} sm={12} md={6}>
+                          <h3 className={classes.title}>Marco Polo</h3>
+                          <div className="separator-center">
+                              <video width="100%" controls preload="none">
+                                  <source src="../MarcoPolo.mp4" type="video/mp4"/>
+                                  <track
+                                      src="/path/to/captions.vtt"
+                                      kind="subtitles"
+                                      srcLang="en"
+                                      label="English"
+                                  />
+                                  Su navegador no soporta el video
+                              </video>
+                          </div>
+                      </GridItem>
+                      <GridItem xs={12} sm={12} md={6}>
+                          <h3 className={classes.title}>A & J</h3>
+                          <div className="separator-center">
+                              <video width="100%" controls preload="none">
+                                  <source src="../A&J.mp4" type="video/mp4"/>
+                                  <track
+                                      src="/path/to/captions.vtt"
+                                      kind="subtitles"
+                                      srcLang="en"
+                                      label="English"
+                                  />
+                                  Su navegador no soporta el video
+                              </video>
+                          </div>
+                      </GridItem>
+                      <GridItem xs={12} sm={12} md={12}>
+                          <h3 className={classes.title}>BPA Electric</h3>
+                          <div className="separator-center">
+                              <video width="50%" controls preload="none">
+                                  <source src="../bpa.mp4" type="video/mp4"/>
+                                  <track
+                                      src="/path/to/captions.vtt"
+                                      kind="subtitles"
+                                      srcLang="en"
+                                      label="English"
+                                  />
+                                  Su navegador no soporta el video
+                              </video>
+                          </div>
+                      </GridItem>
+                      <GridItem xs={12} sm={12} md={6}>
+                          <div className="sparador-center"></div>
+                      </GridItem>
+                  </GridContainer>
+              </div>
               <div id="contactenos">
-
-
+                  <GridContainer>
+                      <GridItem xs={12} sm={12} md={12}>
+                          <h3 className={classes.title}>Contactenos</h3>
+                      </GridItem>
+                      <GridItem xs={12} sm={12} md={12}>
+                      </GridItem>
+                  </GridContainer>
               </div>
 
           </div>

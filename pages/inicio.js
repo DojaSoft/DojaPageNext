@@ -108,7 +108,7 @@ export default function Inicio(props) {
                       <GridItem xs={12} sm={12} md={12}>
                           <InfoArea
                               title="Dojasoft"
-                              description="Somos una empresa colombiana, que comercializa y desarrolla soluciones informáticas y tecnológicas.
+                              description="Somos una empresa colombiana que comercializa y desarrolla soluciones informáticas y tecnológicas.
                               Los productos de DOJA SOFT han sido creados con recursos de última generación. Nuestras soluciones están
                               totalmente integradas, proporcionándole el control de: procesos operativos, administrativos y financieros. Contamos con
                               soluciones de negocio orientadas a incrementar la eficiencia de los procesos y operaciones de nuestros clientes en
@@ -284,7 +284,7 @@ export default function Inicio(props) {
               <div id="contactenos">
                   <GridContainer>
                       <GridItem xs={12} sm={12} md={12}>
-                          <h1>Contactenos</h1>
+                          <h1>Contáctenos</h1>
                       </GridItem>
                       <GridItem xs={12} sm={12} md={12}>
                       </GridItem>

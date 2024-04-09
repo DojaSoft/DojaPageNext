@@ -58,8 +58,7 @@ export default function Footer(props) {
             target="_blank"
           >
             Dojasoft SA
-          </a>{" "}
-          para un mejor lugar
+          </a>
         </div>
       </div>
     </footer>

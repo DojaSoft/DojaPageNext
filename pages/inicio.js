@@ -234,7 +234,7 @@ export default function Inicio(props) {
                       <GridItem xs={12} sm={12} md={6}>
                           <h3 className={classes.title}>Marco Polo</h3>
                           <div className="separator-center">
-                              <video width="100%" controls preload="none">
+                              <video width="100%" controls preload="true">
                                   <source src="../MarcoPolo.mp4" type="video/mp4"/>
                                   <track
                                       src="/path/to/captions.vtt"
@@ -249,7 +249,7 @@ export default function Inicio(props) {
                       <GridItem xs={12} sm={12} md={6}>
                           <h3 className={classes.title}>A & J</h3>
                           <div className="separator-center">
-                              <video width="100%" controls preload="none">
+                              <video width="100%" controls preload="true">
                                   <source src="../A&J.mp4" type="video/mp4"/>
                                   <track
                                       src="/path/to/captions.vtt"
@@ -263,8 +263,8 @@ export default function Inicio(props) {
                       </GridItem>
                       <GridItem xs={12} sm={12} md={12}>
                           <h3 className={classes.title}>BPA Electric</h3>
-                          <div className="separator-center">
-                              <video width="50%" controls preload="none">
+                          <div className="separator-center video-md">
+                              <video width="100%" controls preload="true">
                                   <source src="../bpa.mp4" type="video/mp4"/>
                                   <track
                                       src="/path/to/captions.vtt"
@@ -284,7 +284,7 @@ export default function Inicio(props) {
               <div id="contactenos">
                   <GridContainer>
                       <GridItem xs={12} sm={12} md={12}>
-                          <h3 className={classes.title}>Contactenos</h3>
+                          <h1>Contactenos</h1>
                       </GridItem>
                       <GridItem xs={12} sm={12} md={12}>
                       </GridItem>

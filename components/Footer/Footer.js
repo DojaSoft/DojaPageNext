@@ -12,6 +12,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Favorite from "@material-ui/icons/Favorite";
 
 import styles from "/styles/jss/nextjs-material-kit/components/footerStyle.js";
+import Info from "../Typography/Info";
 
 const useStyles = makeStyles(styles);
 
@@ -32,54 +33,31 @@ export default function Footer(props) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/?ref=njsmk-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Creative Tim
-              </a>
+              <p className="separator">
+                Bogotá D.C - Colombia
+              </p>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/presentation?ref=njsmk-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                About us
-              </a>
+               <Info>Dojasoft@gmail.com</Info>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://blog.creative-tim.com/?ref=njsmk-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Blog
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license?ref=njsmk-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Licenses
-              </a>
+              <p>
+                302 3808800 - 318 8602883
+              </p>
             </ListItem>
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
+          &copy; {1900 + new Date().getYear()} , Hecho con el {" "}
+          <Favorite className={classes.icon} /> por{" "}
           <a
-            href="https://www.creative-tim.com?ref=njsmk-footer"
+            href="https://wa.me/3024498292"
             className={aClasses}
             target="_blank"
           >
-            Creative Tim
+            Dojasoft SA
           </a>{" "}
-          for a better web.
+          para un mejor lugar
         </div>
       </div>
     </footer>

@@ -63,10 +63,26 @@
   h1{
     padding: 5rem 0;
   }
-  .makeStyles-grid-100{
-    width: 100% !important;
+  p{
+    color: #000000;
+  }
+  img{
+    width: 100%;
+  }
+  .tittle-top{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+  .middle-separate{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 }
 /**********************/
 
+/* Styles footer */
+footer .separator{
+  margin-right: 1rem;
+}
+/*****************/
 

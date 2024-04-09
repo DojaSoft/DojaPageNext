@@ -38,6 +38,8 @@ import Success from "../components/Typography/Success";
 import CustomTabs from "../components/CustomTabs/CustomTabs";
 import Face from "@material-ui/icons/Face";
 import Build from "@material-ui/icons/Build";
+import {AcUnitRounded, AddToHomeScreenRounded, Memory, SupervisedUserCircle} from "@material-ui/icons";
+import Camera from "@material-ui/icons/Camera";
 
 const useStyles = makeStyles(styles);
 
@@ -60,7 +62,7 @@ export default function Inicio(props) {
               />
           </div>
 
-          <Parallax image="/img/fondo-principal.jpg">
+          <Parallax image="/img/profile-bg.jpg">
               <div className={classes.container}>
                   <GridContainer>
                       <GridItem>
@@ -132,59 +134,81 @@ export default function Inicio(props) {
               <div id="a-la-medida">
                   <GridContainer>
                       <GridItem xs={12} sm={12} md={12}>
-                          <h3 className={classes.title}>¿Como desarrollamos Software?</h3>
+                          <h3 className="tittle-top">¿Como desarrollamos Software?</h3>
                       </GridItem>
                       <GridItem xs={12} sm={12} md={12}>
                           <div>
                               <CustomTabs
-                                  headerColor="primary"
+                                  headerColor="warning"
                                   tabs={[
                                       {
-                                          tabName: "Profile",
+                                          tabName: "Cliente",
                                           tabIcon: Face,
                                           tabContent: (
-                                              <p className={classes.textCenter}>
-                                                  I think that’s a responsibility that I have, to push
-                                                  possibilities, to show people, this is the level that
-                                                  things could be at. So when you get something that has
-                                                  the name Kanye West on it, it’s supposed to be pushing
-                                                  the furthest possibilities. I will be the leader of a
-                                                  company that ends up being worth billions of dollars,
-                                                  because I got the answers. I understand culture. I am
-                                                  the nucleus.
-                                              </p>
+                                              <div className={classes.textCenter + " middle-separate"}>
+                                                  <InfoArea
+                                                      title="Conocer al Cliente"
+                                                      description="En Doja nos enfocamos en conocer a nuestros clientes, ya que interiorizar
+                                                      los procesos de nuestros clientes hace conocer lo que debemos comenzar a desarrollar según
+                                                      las necesidades de nuestros clientes"
+                                                      icon={SupervisedUserCircle}
+                                                      iconColor="danger"
+                                                      vertical
+                                                  />
+                                              </div>
                                           )
                                       },
                                       {
-                                          tabName: "Messages",
-                                          tabIcon: Chat,
+                                          tabName: "Agiles",
+                                          tabIcon: Memory,
                                           tabContent: (
-                                              <p className={classes.textCenter}>
-                                                  I think that’s a responsibility that I have, to push
-                                                  possibilities, to show people, this is the level that
-                                                  things could be at. I will be the leader of a company
-                                                  that ends up being worth billions of dollars, because I
-                                                  got the answers. I understand culture. I am the nucleus.
-                                                  I think that’s a responsibility that I have, to push
-                                                  possibilities, to show people, this is the level that
-                                                  things could be at.
-                                              </p>
+                                              <img
+                                                  src="/img/scrum-guia.png"
+                                                  alt="scrum"
+                                                  className="slick-image"
+                                              />
                                           )
                                       },
                                       {
-                                          tabName: "Settings",
+                                          tabName: "Gestión",
                                           tabIcon: Build,
                                           tabContent: (
-                                              <p className={classes.textCenter}>
-                                                  think that’s a responsibility that I have, to push
-                                                  possibilities, to show people, this is the level that
-                                                  things could be at. So when you get something that has
-                                                  the name Kanye West on it, it’s supposed to be pushing
-                                                  the furthest possibilities. I will be the leader of a
-                                                  company that ends up being worth billions of dollars,
-                                                  because I got the answers. I understand culture. I am
-                                                  the nucleus.
-                                              </p>
+                                              <div className={classes.textCenter}>
+                                                  <GridContainer>
+                                                      <GridItem xs={12} sm={12} md={4}>
+                                                          <InfoArea
+                                                              title="¿ Como se debe gerenciar un proyecto ?"
+                                                              description="Siempre debemos ver cual es la mejor manera de dirigir un proyecto desde
+                                                      el presupuesto y las tecnologias a implementar como los tiempos de respuesta a
+                                                      nuestros clientes con el fin de siempre cumplir nuestros objetivos propuestos como equipo"
+                                                              icon={Camera}
+                                                              iconColor="success"
+                                                              vertical
+                                                          />
+                                                      </GridItem>
+                                                      <GridItem xs={12} sm={12} md={4}>
+                                                          <InfoArea
+                                                              title="Planificar"
+                                                              description="Se debe planificar con la realidad, es decir, conociendo los tiempos finales del proyecto
+                                                              y con la capacidad de tomar decisiones en medio del proceso en los sprint programados"
+                                                              icon={AcUnitRounded}
+                                                              iconColor="primary"
+                                                              vertical
+                                                          />
+                                                      </GridItem>
+                                                      <GridItem xs={12} sm={12} md={4}>
+                                                          <InfoArea
+                                                              title="Comunicación"
+                                                              description="Al final los proyectos no se lográn por la falta de comunicación o porque
+                                                              en ocaciones hay supuestos falsos, por eso tener una clara comunicación es fundamental
+                                                              para desarrollar buenos proyectos"
+                                                              icon={AddToHomeScreenRounded}
+                                                              iconColor="danger"
+                                                              vertical
+                                                          />
+                                                      </GridItem>
+                                                  </GridContainer>
+                                              </div>
                                           )
                                       }
                                   ]}
@@ -194,6 +218,7 @@ export default function Inicio(props) {
                   </GridContainer>
               </div>
               <div id="contactenos">
+
 
               </div>
 

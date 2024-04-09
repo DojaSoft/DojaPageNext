@@ -38,7 +38,9 @@ export default function Footer(props) {
               </p>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-               <Info>Dojasoft@gmail.com</Info>
+               <p className="separator">
+                 Dojasoft@gmail.com
+               </p>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <p>
@@ -51,7 +53,7 @@ export default function Footer(props) {
           &copy; {1900 + new Date().getYear()} , Hecho con el {" "}
           <Favorite className={classes.icon} /> por{" "}
           <a
-            href="https://wa.me/3024498292"
+            href="https://wa.me/3002311878"
             className={aClasses}
             target="_blank"
           >

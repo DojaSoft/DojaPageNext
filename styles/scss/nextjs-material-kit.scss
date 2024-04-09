@@ -89,6 +89,15 @@
   .separator-center{
     margin: 4rem 4rem;
   }
+  .video-md{
+    width: 50%;
+    margin: auto;
+  }
+  @media (max-width: 720px){
+    .video-md{
+      width: 80%;
+    }
+  }
 }
 /*******************/
 

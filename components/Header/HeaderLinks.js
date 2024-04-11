@@ -72,11 +72,6 @@ export default function HeaderLinks(props) {
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
-        {/*<Tooltip title="Delete">
-          <IconButton aria-label="Delete">
-            <DeleteIcon />
-          </IconButton>
-        </Tooltip>*/}
         <Tooltip
           id="instagram-whatsap"
           title="Follow us on Whatsap"
@@ -84,7 +79,7 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://wa.me/3002311878"
+            href="https://web.whatsapp.com/send?phone=573002311878"
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -108,6 +103,23 @@ export default function HeaderLinks(props) {
           >
             <i className={classes.socialIcons + " fab fa-facebook"} />
           </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+            id="instagram-tooltip"
+            title="Follow us on instagram"
+            placement={"top"}
+            classes={{ tooltip: classes.tooltip }}
+        >
+            <Button
+                color="transparent"
+                href="https://www.instagram.com/doja_soft?igsh=MWJra3puMGpzeTFsMg=="
+                target="_blank"
+                className={classes.navLink}
+            >
+                <i className={classes.socialIcons + " fab fa-instagram"} />
+            </Button>
         </Tooltip>
       </ListItem>
     </List>
